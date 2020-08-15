@@ -16,4 +16,10 @@
     <string name="default_sample_rate_in_hertz">96000</string>
     <string name="default_start_frequency_in_hertz">1</string>
     <string name="default_end_frequency_in_hertz">20000</string>
+    <string name="default_record_duration_in_seconds">25</string>
+    <string name="record_duration_in_seconds">Record Duration (In seconds)</string>
+    <string name="record_complete">Record complete</string>
+    <string name="test_complete">Test complete. File created at %1$s</string>
+    <string name="record_started">Record started</string>
+    <string name="open_record_folder">Open record folder</string>
 </resources>
