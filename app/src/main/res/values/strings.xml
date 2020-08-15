@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TuneVid</string>
+
+    <string name="start_test">Start Test</string>
+
+    <string name="sound_duration_in_seconds">Sound duration (in seconds)</string>
+    <string name="sample_rate_in_hertz">Sample Rate (in Hz)</string>
+    <string name="start_frequency_in_hertz">Start Frequency (In Hz)</string>
+    <string name="end_frequency_in_hertz">End Frequency (In Hz)</string>
+
+    <string name="state_idle">State: Idle</string>
+    <string name="state_test_in_progress">State: Test In Progress…</string>
+    <string name="state_recording_permissions_not_granted">State: Recording permissions not granted</string>
+
+    <string name="default_sound_duration_in_seconds">15</string>
+    <string name="default_sample_rate_in_hertz">96000</string>
+    <string name="default_start_frequency_in_hertz">1</string>
+    <string name="default_end_frequency_in_hertz">20000</string>
+</resources>
