@@ -117,18 +117,27 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, getString(R.string.record_complete), Toast.LENGTH_SHORT).show()
             stateText.text = getString(R.string.test_complete, recordFileName)
             enableViews()
+//            FIXME Make this "open folder" code work :)
 //            openRecordFolder.visibility = VISIBLE
 //            openRecordFolder.setOnClickListener {
 //                getExternalFilesDir(null)?.absolutePath?.let { folderPath ->
-//                    openFolder(folderPath)
+//                    val location = FileProvider.getUriForFile(
+//                        this,
+//                        applicationContext.packageName + ".provider",
+//                        File(folderPath)
+//                    )
+//                    openFolder(location)
 //                }
 //            }
         }
     }
 
-    private fun openFolder(location: String) {
+    private fun openFolder(location: Uri) {
         val intent = Intent(Intent.ACTION_VIEW)
-        intent.setDataAndType(Uri.parse("file://$location"), "application/*")
+        intent.setDataAndType(Uri.parse("content://$location/"), "*/*")
+        intent.addFlags(
+            Intent.FLAG_GRANT_READ_URI_PERMISSION
+        )
         startActivity(intent)
     }
 
