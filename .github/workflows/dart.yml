@@ -1,15 +1,14 @@
-name: Android Feature Branch CI
+name: Android CI
 
 on:
   push:
     branches:
-      - '!master'
+      - 'master'
 
 jobs:
-  test:
-    name: Run Unit Tests
+  build:
+    name: Build Android Debug APK and Upload artifact
     runs-on: ubuntu-18.04
-
     steps:
       - uses: actions/checkout@v1
       - name: set up JDK 1.8
